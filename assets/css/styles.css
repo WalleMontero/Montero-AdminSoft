@@ -1,3 +1,9 @@
 body {
     text-align: center;
+
+}
+
+.border {
+    border-radius: 10px;
+    border:#000000;
 }
