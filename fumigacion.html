@@ -9,8 +9,234 @@
     <title>Fumigación</title>
 </head>
 <body>
+    
     <div id="navBar">Fumigación</div>
+    <br>
+    <div class="container border">
+        
+                    <form id="formulario">
+           
+                        <div class="mb-3">
+                          <label class="form-label">Fecha</label>
+                          <input type="date" class="form-control" id="fumigationDate">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label class="form-label">Sección del Huerto</label>
+                            <input type="text" class="form-control" id="orchardSection" list="sections">
+                            <datalist id="sections">
+                                <option value="section 1">
+                                <option value="section 2">
+                                <option value="section 3">
+                              </datalist>
+                        </div>
+            
+                          <div class="mb-3">
+                            <label class="form-label">Producto</label>
+                            <select class="form-select mb-3" aria-label="Ejemplo de .form-select-lg">
+                                <option selected>Abre este menú select</option>
+                                <option value="1">Uno</option>
+                                <option value="2">Dos</option>
+                                <option value="3">Tres</option>
+                              </select>
+                        </div>
 
+                        <div class="mb-3">
+                            <label class="form-label">Plaga a Controlar</label>
+                            <input type="text" class="form-control" id="targetPest" list="plagues">
+                            <datalist id="plagues">
+                                <option value="Araña Roja">
+                                <option value="Gusano Barrenador">
+                                <option value="Medidor">
+                            </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Dosís Aplicada</label>
+                            <input type="number" class="form-control" id="appliedDose">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class=" form-label">Método de Aplicación</label>
+                            <div>
+                                
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                F
+                                </label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                E
+                                </label>
+                            </div>
+                            <div>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                I
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label class="form-label">Responsable que Recomendó</label>
+                            <input type="text" class="form-control" id="whoRecommended" list="whos">
+                            <datalist id="whos">
+                                <option value="ing 1">
+                                <option value="ing 2">
+                                <option value="ing 3">
+                              </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">¿Quién revisó?</label>
+                            <input type="text" class="form-control" id="whoChecked" list="whos2">
+                            <datalist id="whos2">
+                                <option value="ing 1">
+                                <option value="ing 2">
+                                <option value="ing 3">
+                              </datalist>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Responsables de Aplicación</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Margarito
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Miguel
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Juan
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Mario
+                                </label>
+                              </div>
+
+                        </div>
+
+                       
+
+                        <div class="mb-3">
+                            <label class="form-label">Equipo de Protección Personal</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Traje
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Careta
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Botas
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Guantes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Googles
+                                </label>
+                              </div>
+                              
+                        </div>
+
+                        <div class="mb-3">
+                            <label class=" form-label">Condiciones Climáticas</label>
+                            <div  >
+                                
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                Lluvia
+                                </label>
+                            </div>
+                            <div >
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Nublado
+                                </label>
+                            </div>
+                            <div >
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Soleado
+                                </label>
+                            </div>
+                        </div>
+
+
+
+            
+                    
+                        <button type="submit" class="btn btn-primary" value="Agregar Tarea" id="botonAgregar">Enviar</button>
+                      </form>
+    </div>
+    <br>
+    <br>
+    <!--
+    <br>
+    
+    <br>
+    <div class="container border">
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody id="productTable">
+              
+              
+            </tbody>
+          </table>
+        
+    </div>
+    <br>
+    <br>
+    
+    <div class="container border" style="width: 50pc">
+        <div class="row"><div class="col">
+           <button id="graficar" class="btn btn-primary">Graficar Datos</button> 
+        </div></div>
+        
+    <canvas id="myChart"></canvas>
+    </div>
+    <br>
+    <br>
+    <br>
+-->
+
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="./js/fumigacionResgister.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
